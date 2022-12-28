@@ -1,0 +1,73 @@
+* {
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "Cabecera Cabecera Cabecera"
+        "Desafio1 Desafio2 Desafio3";
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 40% 30%;
+    max-height: 100vh;
+    text-align: center;
+    background: lightgray;
+}
+
+header {
+    grid-area: Cabecera;
+}
+
+h1 {
+    color: gray;
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5),
+        2px -2px 0 rgba(255, 255, 255, 0.9);
+}
+
+p {
+    grid-area: Desafio1 Desafio2 Desafio3;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid;
+    box-shadow: 10px 5px 5px gray;
+}
+
+/* CSS para Desafio 1 */
+#desafio1 {
+    border: 8px white ridge;
+}
+
+#borde {
+    grid-area: Desafio1;
+    width: 150px;
+    margin-top: 20px;
+}
+
+/* CSS para Desafio 2 */
+#desafio2 {
+    border: 8px white ridge;
+}
+
+#desafioSticker {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+#stickers {
+    width: 120px;
+    border: 2px solid;
+}
+
+
+/* Desafio 3 */
+#desafio3 {
+    border: 8px white ridge;
+}
+
+select {
+    margin-top: 40px;
+}

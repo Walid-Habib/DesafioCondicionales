@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<header>
+    <h1>Desafio CONDICIONALES</h1>
+</header>
+
+<body>
+    <p>Desafio 1</p>
+    <p>Desafio 2</p>
+    <p>Desafio 3</p>
+
+    <section id="desafio1">
+        <img src="./assets/img/manoIndicaAbajo.gif" alt="">
+        <h5>Pulsa en la imagen para (des)bordear</h5>
+        <img id="borde" src="./assets/img/santa-claus-santa.gif" alt="">
+    </section>
+
+    <section id="desafio2">
+        <article id="desafioSticker">
+            <div>
+                <img id="stickers" src="./assets/img/trineoVolador.gif" height="100px" alt="">
+                <input id="sticker1" type="number" onchange="demasiados()" size="10" min="0" max="10"
+                    placeholder="Cantidad"
+                    onkeypress="return (event.charCode >= 48 /* '0' */ && event.charCode <= 57 /* '9' */)"
+                    onkeydown="return false">
+            </div>
+            <div>
+                <img id="stickers" src="./assets/img/goku.gif" height="100px" alt="">
+                <input id="sticker2" type="number" onchange="demasiados()" size="10" min="0" max="10"
+                    placeholder="Cantidad"
+                    onkeypress="return (event.charCode >= 48 /* '0' */ && event.charCode <= 57 /* '9' */)"
+                    onkeydown="return false">
+            </div>
+            <div>
+                <img id="stickers" src="./assets/img/feliz-navidad-imagen-animada-0260.gif" height="100px" alt="">
+                <input id="sticker3" type="number" onchange="demasiados()" size="10" min="0" max="10"
+                    placeholder="Cantidad"
+                    onkeypress="return (event.charCode >= 48 /* '0' */ && event.charCode <= 57 /* '9' */)"
+                    onkeydown="return false">
+            </div>
+        </article>
+        <h4>Llevas<span class="suficiente">0</span>Sticker<span class="demasiados"></span></h4>
+    </section>
+
+    <section id="desafio3">
+        <select name="clave" id="uno" onchange="clave()">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+        </select>
+        <select name="" id="dos" onchange="clave()">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+        </select>
+        <select name="" id="tres" onchange="clave()">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+        </select>
+        <h4>Password <span class="uno"></span>es<span class="dos"></span></h4>
+    </section>
+    <script src="./assets/js/js.js"></script>
+</body>
+
+</html>
